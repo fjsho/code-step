@@ -5,50 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Profile</title>
 </head>
 
 <body>
-    <header>
-        <div><a href="#">Profile</a></div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#bicycle">Bicycle</a></li>
+    <header class="page-header">
+        <div class="logo">
+            <a class="logo-link -link" href="#">
+                <img class="-img" src="img/logo.svg" alt="logo" />
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="list-header">
+                <li class="item"><a class="-link" href="#about">About</a></li>
+                <li class="item"><a class="-link" href="#bicycle">Bicycle</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="./img/mainvisual.jpg" alt="main-visual">
-        <section>
-            <h2 id="about">About</h2>
-            <img src="./img/about.jpg" alt="about">
-            <h4>KAKERU MIYAICHI</h4>
-            <div>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+        <div class="main-visual">
+            <img class="-img" src="./img/mainvisual.jpg" alt="main-visual">
+        </div>
+        <section class="about-section">
+            <h2 class="title" id="about"><span class="-border">About</span></h2>
+            <div class="about-profile">
+                <div class="round-img">
+                    <img class="img" src="./img/about.jpg" alt="about" class="">
+                </div>
+                <div class="profile">
+                    <h4 class="name">KAKERU MIYAICHI</h4>
+                    <div class="text">
+                        <span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2 id="bicycle">Bicycle</h2>
-            <div>
-                <div>
-                    <img src="./img/bicycle1.jpg" alt="bicycle1">
-                    <h4>チャリ１</h4>
-                    <div>テキストテキストテキスト</div>
+        <section class="item-section">
+            <h2 class="title" id="bicycle"><span class="-border">Bicycle</span></h2>
+            <div class="contents">
+                <div class="item-card">
+                    <img class="img" src="./img/bicycle1.jpg" alt="bicycle1">
+                    <div class="description">
+                        <h4 class="title">チャリ１</h4>
+                        <div class="text">テキストテキストテキスト</div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/bicycle2.jpg" alt="bicycle2">
-                    <h4>チャリ２</h4>
-                    <div>テキストテキストテキスト</div>
+                <div class="item-card">
+                    <img class="img" src="./img/bicycle2.jpg" alt="bicycle2">
+                    <div class="description">
+                        <h4 class="title">チャリ２</h4>
+                        <div class="text">テキストテキストテキスト</div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/bicycle3.jpg" alt="bicycle3">
-                    <h4>チャリ３</h4>
-                    <div>テキストテキストテキスト</div>
+                <div class="item-card">
+                    <img class="img" src="./img/bicycle3.jpg" alt="bicycle3">
+                    <div class="description">
+                        <h4 class="title">チャリ３</h4>
+                        <div class="text">テキストテキストテキスト</div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <small>&copy; 2020 Profile</small>
+    <footer class="page-footer">
+        <div><small>&copy; 2020 Profile</small></div>
     </footer>
 </body>
 
