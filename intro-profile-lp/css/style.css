@@ -60,6 +60,12 @@ body {
 .about-section > .title > .-border {
   border-bottom: 1px solid black;
 }
+@media screen and (max-width: 600px) {
+  .about-section > .about-profile {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .about-profile {
   display: flex;
@@ -89,6 +95,11 @@ body {
 .item-section > .contents {
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  .item-section > .contents {
+    flex-direction: column;
+  }
 }
 
 .item-card {
