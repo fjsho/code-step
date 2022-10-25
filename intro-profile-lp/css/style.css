@@ -41,6 +41,11 @@ body {
   height: 600px;
   object-fit: cover;
 }
+@media screen and (max-width: 600px) {
+  .main-visual > .-img {
+    height: calc(100vh - 60px);
+  }
+}
 
 .about-section {
   max-width: 960px;

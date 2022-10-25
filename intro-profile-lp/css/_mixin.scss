@@ -1,0 +1,15 @@
+// ブレークポイントのマップ
+$breakpoint: (
+    sp: 'screen and (max-width: 600px)'
+);
+
+// bpを引数とするmqを作成
+@mixin mq($bp) {
+
+    // 上記で定義したブレークポイントのマップにアクセスして、引数の値でマッチさせている。
+    // つまり今回の場合は"sp"を引数に入れてmqを呼び出すと
+    // 'screen and (max-width: 600px'が#{}の中に挿入された状態で下記の文が出力される構造になっている。
+    @media #{map-get($breakpoint, $bp)} {
+        @content;
+    }
+}

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use "mixin" as m;
+
 body {
     background-color: white;
     width: 100%;
@@ -47,6 +49,10 @@ body {
     margin: 0 auto 120px;
 
     &>.-img {
+        @include m.mq(sp) {
+            height: calc(100vh - 60px);
+        }
+
         width: 100vw;
         height: 600px;
         object-fit: cover;
