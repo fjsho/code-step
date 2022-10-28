@@ -61,10 +61,13 @@ body {
 
 // About
 .about-section {
-    max-width: 960px;
+    max-width: 50%;
     padding: 0 4%;
     margin: 0 auto 120px;
-    max-width: 50%;
+
+    @include m.mq(sp) {
+        max-width: 100%;
+    }
 
     >.title {
         text-align: center;
@@ -76,27 +79,27 @@ body {
     }
 
     >.about-profile {
+        display: flex;
+
         @include m.mq(sp) {
-            display: flex;
             flex-direction: column;
+        }
+
+        >.round-img {
+            margin-right: 20px;
+
+            @include m.mq(sp) {
+                margin: 0 auto;
+            }
+
+            >.img {
+                border-radius: 100%;
+                width: 100px;
+                height: 100px;
+            }
         }
     }
 }
-
-.about-profile {
-    display: flex;
-}
-
-.round-img {
-    margin-right: 20px;
-
-    >.img {
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
-    }
-}
-
 
 // Bicycle
 .item-section {
