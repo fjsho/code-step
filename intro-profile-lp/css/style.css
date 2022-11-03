@@ -107,15 +107,24 @@ body {
     flex-direction: column;
   }
 }
-
-.item-card {
+.item-section > .contents > .item-card {
   margin: 0 20px;
 }
-.item-card > .description {
-  text-align: center;
+@media screen and (max-width: 600px) {
+  .item-section > .contents > .item-card {
+    margin-bottom: 20px;
+  }
 }
-.item-card > .img {
+.item-section > .contents > .item-card > .img {
   max-width: 240px;
+}
+@media screen and (max-width: 600px) {
+  .item-section > .contents > .item-card > .img {
+    max-width: 100%;
+  }
+}
+.item-section > .contents > .item-card > .description {
+  text-align: center;
 }
 
 .page-footer {

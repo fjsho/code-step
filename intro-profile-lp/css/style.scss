@@ -123,18 +123,27 @@ body {
         @include m.mq(sp) {
             flex-direction: column;
         }
-    }
-}
 
-.item-card {
-    margin: 0 20px;
+        >.item-card {
+            margin: 0 20px;
 
-    >.description {
-        text-align: center;
-    }
+            @include m.mq(sp) {
+                margin-bottom: 20px;
+            }
 
-    >.img {
-        max-width: 240px;
+            >.img {
+                max-width: 240px;
+
+                @include m.mq(sp) {
+                    max-width: 100%;
+                }
+            }
+
+            >.description {
+                text-align: center;
+            }
+
+        }
     }
 }
 
