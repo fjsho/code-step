@@ -2,14 +2,86 @@
 
 body {
   background-color:#F4F9FF;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333333;
+  font-size: 14px;
+  font-family: "メイリオ";
+}
+
+header {
+  margin-top: 60px
+}
+
+h2 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-bottom: 18px;
+}
+
+ol {
+  padding-left: 1.1em;
+}
+
+ol > li {
+  padding-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: lightgray;
+  padding: 18px 0;
+}
+
+th {
+  font-weight: normal;
+  padding-right: 10px;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: gray;
+}
+
+#mainvisual {
 }
 
 #index {
   background-color: #FFF;
 }
 
+#detail {
+}
+
+#detail .contents {
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 160px;
+}
+
+.image {
+  padding-right: 60px;
+}
+
+.text {
+  padding: 12px 0;
+}
+
 .contents-wrapper {
   max-width: 600px;
-  padding: 30px 0;
-  margin: 0 auto;
+  padding: 20px 0;
+  margin: 30px auto;
 }

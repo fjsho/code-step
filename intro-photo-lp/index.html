@@ -5,67 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Book</title>
-    <meta name="description" content="写真集を出版することになった友人のために、紹介用のWebページを制作します。スマホやタブレットでも表示できるようにレスポンシブの対応も行います。">
-    <link rel="icon" href="./img/favicon.ico" sizes="any">
+    <meta
+      name="description"
+      content="写真集を出版することになった友人のために、紹介用のWebページを制作します。スマホやタブレットでも表示できるようにレスポンシブの対応も行います。"
+    />
+    <link rel="icon" href="./img/favicon.ico" sizes="any" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <h1>PHOTO BOOK</h1>
+      <div class="logo">
+        <h1>
+          <a href="#">
+            <img src="./img/logo.svg" alt="PHOTO BOOK" />
+          </a>
+        </h1>
+      </div>
     </header>
     <main>
       <div id="mainvisual">
-        <h1><img src="./img/mainvisual.jpg" alt="メインビジュアル"></h1>
+        <h1><img src="./img/mainvisual.jpg" alt="メインビジュアル" /></h1>
       </div>
       <section id="index">
         <div class="contents-wrapper">
           <h2>INDEX</h2>
-          <ol>
-            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-          </ol>
+          <div class="contents">
+            <ol>
+              <li>
+                タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              </li>
+              <li>
+                タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              </li>
+              <li>
+                タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              </li>
+              <li>
+                タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              </li>
+              <li>
+                タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
       <section id="detail">
         <div class="contents-wrapper">
           <h2>DETAIL</h2>
-          <div class="image">
-            <img src="./img/detail.jpg" alt="詳細イメージ" width="270">
-          </div>
           <div class="contents">
-            <h3>タイトルタイトルタイトル</h3>
-            <hr>
-            <table>
-              <tbody>
-                <tr>
-                  <th>著者</th>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-                <tr>
-                  <th>出版社</th>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-                <tr>
-                  <th>発行年</th>
-                  <td>タイトルタイトルタイトル</td>
-                </tr>
-              </tbody>
-            </table>
-            <hr>
-            <p>テキストテキストテキストテキストテキス トテキスト テキストテキストテキストテ キストテキストテキスト</p>
-            <a href="#">
-              <p>オンラインストアで見る</p>
-            </a>
+            <div class="image">
+              <img src="./img/detail.jpg" alt="詳細イメージ" width="270" />
+            </div>
+            <div class="textarea">
+              <h3>タイトルタイトルタイトル</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>著者</th>
+                    <td>タイトルタイトルタイトル</td>
+                  </tr>
+                  <tr>
+                    <th>出版社</th>
+                    <td>タイトルタイトルタイトル</td>
+                  </tr>
+                  <tr>
+                    <th>発行年</th>
+                    <td>タイトルタイトルタイトル</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text">
+                <p>
+                  テキストテキストテキストテキストテキス トテキスト
+                  テキストテキストテキストテ キストテキストテキスト
+                </p>
+              </div>
+              <a href="#"><p>オンラインストアで見る</p></a>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <small>&copy;2020 PHOTO BOOK</small>
+      <div class="contents-wrapper">
+        <small>&copy;2020 PHOTO BOOK</small>
+      </div>
     </footer>
   </body>
 </html>
