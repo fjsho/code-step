@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color:#F4F9FF;
-  max-width: 1000px;
-  margin: 0 auto;
   color: #333333;
-  font-size: 14px;
-  font-family: "メイリオ";
+  font-size: 0.875rem;
 }
 
 header {
+  width: 160px;
   margin-top: 60px
 }
 
-h2 {
-  font-size: 18px;
-  padding-bottom: 10px;
+img {
+  max-width: 100%;
 }
 
 h3 {
@@ -53,6 +54,8 @@ a:hover {
 }
 
 #mainvisual {
+  max-width: max-content;
+  padding: 0 10px;
 }
 
 #index {
@@ -68,12 +71,19 @@ a:hover {
   flex-direction: row;
 }
 
-.logo img {
-  width: 160px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  padding-bottom: 10px;
 }
 
 .image {
-  padding-right: 60px;
+  width: 270px;
+  margin-right: 60px;
 }
 
 .text {
