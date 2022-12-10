@@ -75,38 +75,45 @@ a:hover {
 
 #index {
   background-color: #FFF;
+  padding: 30px 0;
+  margin-bottom: 30px;
 }
 
 #detail {
+  padding: 30px 0;
+  margin-bottom: 60px;
 }
 
 #detail .contents {
-  height: 270px;
   display: flex;
   flex-direction: row;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
-.section-title {
-  font-size: 1.125rem;
-  padding-bottom: 10px;
-}
-
-.image {
+#detail .image {
   width: 270px;
   margin-right: 60px;
 }
 
-.text {
+#detail .text {
   padding: 12px 0;
 }
 
-.contents-wrapper {
-  max-width: 600px;
-  padding: 20px 0;
-  margin: 30px auto;
+/*--------------------------
+  sp
+--------------------------*/
+@media screen and (max-width: 1024px) {
+  .contents-wrapper {
+    padding: 0 40px;
+  }
+
+  /*  detail  */
+  #detail .contents {
+    flex-direction: column;
+  }
+
+  #detail .image {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
 }
