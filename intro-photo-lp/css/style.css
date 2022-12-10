@@ -53,6 +53,21 @@ a:hover {
   color: gray;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  padding-bottom: 10px;
+}
+
+.contents-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 #mainvisual {
   max-width: max-content;
   padding: 0 10px;
